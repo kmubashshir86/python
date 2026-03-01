@@ -4,90 +4,61 @@
 
 We assign numbers to English alphabets as:
 
-- A = 1  
-- B = 2  
-- C = 3  
-- ...  
-- Z = 26  
-
-So each letter corresponds to its position in the English alphabet.
+A = 1  
+B = 2  
+C = 3  
+...  
+Z = 26  
 
 ---
 
-## 🎯 Special Case: Vowel Number Formula
+## 🎯 Vowel Generating Function
 
-The vowels are:
+The vowels (A, E, I, O, U) can be generated using the function:
 
-A, E, I, O, U
-
-Their alphabet positions are:
-
-| Vowel | Position |
-|--------|----------|
-| A      | 1        |
-| E      | 5        |
-| I      | 9        |
-| O      | 15       |
-| U      | 21       |
-
-These values can be generated using the function:
-
-\[
-f(n) = 64 + \frac{2n^2 + 8n - 5 + (-1)^n}{4}
-\]
-
----
-
-## 🧮 Function Definition
-
-\[
-f(n) = 64 + \frac{2n^2 + 8n - 5 + (-1)^n}{4}
-\]
+f(n) = 64 + (2n² + 8n − 5 + (−1)ⁿ) / 4
 
 Where:
 
-- `n` represents the vowel index  
-- n = 1 → A  
-- n = 2 → E  
-- n = 3 → I  
-- n = 4 → O  
-- n = 5 → U  
+n represents the vowel index.
+
+n = 1 → A  
+n = 2 → E  
+n = 3 → I  
+n = 4 → O  
+n = 5 → U  
 
 ---
 
 ## 📍 Domain
 
-\[
-\text{Domain} = \{1, 2, 3, 4, 5\}
-\]
+The function is defined only for:
+
+Domain = {1, 2, 3, 4, 5}
 
 ---
 
 ## 📈 Range
 
-\[
-\text{Range} = \{65, 69, 73, 79, 85\}
-\]
+For the above domain values, the function produces:
 
-These correspond to ASCII values of vowels:
+Range = {65, 69, 73, 79, 85}
 
-| Letter | ASCII |
-|--------|--------|
-| A      | 65     |
-| E      | 69     |
-| I      | 73     |
-| O      | 79     |
-| U      | 85     |
+These are the ASCII values of uppercase vowels:
+
+65 → A  
+69 → E  
+73 → I  
+79 → O  
+85 → U  
 
 ---
 
-## ✅ Summary
+## ✅ Final Summary
 
-- Letters are numbered from **1 to 26**
-- Vowel positions follow a specific quadratic pattern
-- The function generates ASCII values of uppercase vowels
-- The formula works only for `n ∈ {1,2,3,4,5}`
+• Alphabet numbering: A = 1 to Z = 26  
+• The function generates ASCII values of vowels  
+• Domain: finite set {1,2,3,4,5}  
+• Range: {65,69,73,79,85}  
 
----
-
-✨ Mathematical patterns can beautifully describe language structure!
+Now it looks clean and readable in GitHub markdown 😎
