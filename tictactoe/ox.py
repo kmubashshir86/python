@@ -22,7 +22,7 @@ def check():
                 win2=t.Tk()
                 label=t.Label(win2,text="WIN"+" "+k,font=("Arial", 20))
                 label.pack()
-                quit_=t.Button(win2,text="exit",command=lambda: win2.destroy())
+                quit_=t.Button(win2,text="exit",command=win2.destroy)
                 quit_.pack()
                 win2.mainloop()
         except:
@@ -49,3 +49,4 @@ for i in range(1,4):
 
 #setting window on loop 
 win.mainloop()
+
