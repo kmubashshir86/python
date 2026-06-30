@@ -61,4 +61,4 @@ These are the ASCII values of uppercase vowels:
 • Domain: finite set {1,2,3,4,5}  
 • Range: {65,69,73,79,85}  
 
-Now it looks clean and readable in GitHub markdown 😎
+
